@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="static/css/a.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="container">
+    {% for img_file in img_list %}
+    <div class="item">
+    <img src="{{ img_file }}" />
+<!--    <br />-->
+    <input type="text" id="{{ img_file }}" name="img0" value=""  style="width:120px;height:30px;">
+    </div>
+    {% end %}
+</div>
+<button id="submit" type="button" class="btn btn-primary" onclick="myclick({{char_length}})">全部提交</button>
+
+</body>
+<script src="static/click.js">
+
+</script>
+</html>

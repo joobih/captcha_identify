@@ -1,0 +1,15 @@
+#container{
+    justify-content: center;
+  display: grid;
+  background: #d3dce6;
+  grid-row-gap: 120px;
+  grid-column-gap: 30px;
+  /*无法自动计算列数*/
+  grid-template-columns: repeat(12, auto);
+}
+
+.item {
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid #e5e4e9;
+}
